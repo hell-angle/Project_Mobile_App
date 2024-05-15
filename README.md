@@ -1,6 +1,5 @@
 <p>
-    <img src="https://github.com/deluxepter/maven/blob/master/metadata/en-US/images/phoneScreenshots/1.png?raw=true" width="200" />
-    <img src="https://github.com/deluxepter/maven/blob/master/metadata/en-US/images/phoneScreenshots/2.png?raw=true" width="200" />
+    <img src="https://github.com/hell-angle/Project_Mobile_App/blob/master/metadata/en-US/images/phoneScreenshots/home.png?raw=true" width="200" />
 </p>
 
 ## Project Mobile App Course CS4153.O21.CTTT
@@ -10,7 +9,7 @@ Student:
 1. Lê Trí Khoa - 20521466
 2. Đỗ Công Trình - 20522058
 
-###Build from source
+### Build from source
 
 1. Install [Flutter](https://docs.flutter.dev/get-started/install) and then setup an [editor](https://developer.android.com/studio).
 
