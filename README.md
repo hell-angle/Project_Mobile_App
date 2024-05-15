@@ -3,16 +3,14 @@
     <img src="https://github.com/deluxepter/maven/blob/master/metadata/en-US/images/phoneScreenshots/2.png?raw=true" width="200" />
 </p>
 
-## Table of Contents
+## Project Mobile App Course CS4153.O21.CTTT
 
-- [Installation](#installation)
-- [Features](#features)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [Support](#support)
-- [License](#license)
+Student:
 
-#### Optional: Build from source
+1. Lê Trí Khoa - 20521466
+2. Đỗ Công Trình - 20522058
+
+###Build from source
 
 1. Install [Flutter](https://docs.flutter.dev/get-started/install) and then setup an [editor](https://developer.android.com/studio).
 
