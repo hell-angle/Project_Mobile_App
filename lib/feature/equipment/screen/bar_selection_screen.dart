@@ -6,7 +6,7 @@ import '../../../database/database.dart';
 import '../equipment.dart';
 
 class BarSelectionScreen extends StatefulWidget {
-  const BarSelectionScreen({Key? key}) : super(key: key);
+  const BarSelectionScreen({super.key});
 
   @override
   State<BarSelectionScreen> createState() => _BarSelectionScreenState();

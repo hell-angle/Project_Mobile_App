@@ -11,9 +11,9 @@ import '../user.dart';
 
 class UserEditScreen extends StatefulWidget {
   const UserEditScreen({
-    Key? key,
+    super.key,
     required this.user,
-  }) : super(key: key);
+  });
 
   final User user;
 
@@ -175,11 +175,11 @@ class _UserEditScreenState extends State<UserEditScreen> {
                                             ),
                                           );
                                     },
-                                    leading: Icon(
+                                    leading: const Icon(
                                       Icons.male,
                                       color: Colors.blue,
                                     ),
-                                    title: Text(
+                                    title: const Text(
                                       'Male',
                                     ),
                                   ),
@@ -197,11 +197,11 @@ class _UserEditScreenState extends State<UserEditScreen> {
                                         ),
                                       );
                                     },
-                                    leading: Icon(
+                                    leading: const Icon(
                                       Icons.female,
                                       color: Colors.pink,
                                     ),
-                                    title: Text(
+                                    title: const Text(
                                       'Female',
                                     ),
                                   ),

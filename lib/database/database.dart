@@ -2,7 +2,6 @@ import 'dart:async';
 import 'dart:ui';
 
 import 'package:floor/floor.dart';
-import 'package:maven/feature/transfer/data/data.dart';
 import 'package:sqflite/sqflite.dart' as sqflite;
 
 import '../feature/theme/theme.dart';

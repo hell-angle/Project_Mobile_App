@@ -10,10 +10,10 @@ import '../exercise.dart';
 class ExerciseSelectionScreen extends StatefulWidget {
   /// Creates a screen for selecting an [Exercise]
   const ExerciseSelectionScreen({
-    Key? key,
+    super.key,
     this.single = false,
     this.selection = true,
-  }) : super(key: key);
+  });
 
   /// Whether to select a single exercise or multiple exercises
   final bool single;
@@ -73,7 +73,7 @@ class _ExerciseSelectionScreenState extends State<ExerciseSelectionScreen> {
                           leading: const Icon(
                             Icons.add_outlined,
                           ),
-                          title: Text(
+                          title: const Text(
                             'Add',
                           ),
                         ),
@@ -139,15 +139,15 @@ class _ExerciseSelectionScreenState extends State<ExerciseSelectionScreen> {
                   }
                 },
                 leading: CircleAvatar(
+                  backgroundColor:
+                      item.isHidden ? T(context).color.error : null,
+                  foregroundColor:
+                      item.isHidden ? T(context).color.onError : null,
                   child: Text(
                     item.name.isEmpty
                         ? ''
                         : item.name.substring(0, 1).toUpperCase(),
                   ),
-                  backgroundColor:
-                      item.isHidden ? T(context).color.error : null,
-                  foregroundColor:
-                      item.isHidden ? T(context).color.onError : null,
                 ),
                 tileColor: isSelected
                       ? T(context).color.surface

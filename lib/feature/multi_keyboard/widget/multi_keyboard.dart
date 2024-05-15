@@ -15,12 +15,12 @@ enum MKeyboardType {
 
 class MultiKeyboard extends StatefulWidget {
   const MultiKeyboard({
-    Key? key,
+    super.key,
     this.barId,
     required this.equipment,
     required this.data,
     required this.onValueChanged,
-  }) : super(key: key);
+  });
 
   final int? barId;
   final Equipment equipment;

@@ -4,7 +4,7 @@ import '../../feature/theme/theme.dart';
 import 'developer_screen.dart';
 
 class DesignToolWidget extends StatefulWidget {
-  const DesignToolWidget({Key? key}) : super(key: key);
+  const DesignToolWidget({super.key});
 
   @override
   _DesignToolWidgetState createState() => _DesignToolWidgetState();

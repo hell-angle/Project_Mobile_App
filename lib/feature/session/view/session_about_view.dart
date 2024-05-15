@@ -9,9 +9,9 @@ import '../session.dart';
 
 class SessionAboutView extends StatelessWidget {
   const SessionAboutView({
-    Key? key,
+    super.key,
     required this.session,
-  }) : super(key: key);
+  });
 
   final Session session;
   @override

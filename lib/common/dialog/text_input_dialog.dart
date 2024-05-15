@@ -8,14 +8,14 @@ import '../../feature/theme/theme.dart';
 /// To be used with [showBottomSheetDialog].
 class TextInputDialog extends StatefulWidget {
   /// Creates a text input dialog
-  const TextInputDialog({Key? key,
+  const TextInputDialog({super.key,
     required this.title,
     this.hintText = '',
     required this.initialValue,
     this.keyboardType = TextInputType.number,
     this.onValueChanged,
     this.onValueSubmit,
-  }) : super(key: key);
+  });
 
   /// The bold text displayed at the top of the dialog.
   final String title;

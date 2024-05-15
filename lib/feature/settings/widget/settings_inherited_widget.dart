@@ -6,9 +6,8 @@ class InheritedSettingsWidget extends InheritedWidget {
   const InheritedSettingsWidget({
     super.key,
     required Settings settings,
-    required Widget child,
-  })  : _settings = settings,
-        super(child: child);
+    required super.child,
+  })  : _settings = settings;
 
   final Settings _settings;
 

@@ -8,13 +8,13 @@ import '../exercise.dart';
 
 class ExerciseSetDataWidget extends StatefulWidget {
   const ExerciseSetDataWidget({
-    Key? key,
+    super.key,
     required this.exercise,
     required this.group,
     required this.set,
     required this.data,
     required this.isChecked,
-  }) : super(key: key);
+  });
 
   final Exercise exercise;
   final ExerciseGroupDto group;

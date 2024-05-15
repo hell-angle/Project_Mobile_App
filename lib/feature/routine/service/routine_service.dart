@@ -309,10 +309,6 @@ class RoutineService {
   ///
   /// Throws [Exception] if the workout does not exist.
   Future<Session> addSession(Workout workout) async {
-    if (workout == null) {
-      throw Exception('Workout does not exist');
-    }
-
     int sessionId = await routineDao.add(workout.routine.copyWith(
       id: null,
       type: RoutineType.session,

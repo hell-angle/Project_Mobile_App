@@ -4,9 +4,9 @@ import '../../feature/theme/theme.dart';
 
 class ListDialog extends StatelessWidget {
   const ListDialog({
-    Key? key,
+    super.key,
     required this.children,
-  }) : super(key: key);
+  });
 
   final List<Widget> children;
 

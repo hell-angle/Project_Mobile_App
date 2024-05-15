@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:intl/intl.dart';
 import 'package:maven/common/common.dart';
-import 'package:maven/feature/session/bloc/session_bloc/session_bloc.dart';
 
 import '../../../database/database.dart';
 import '../../session/session.dart';
@@ -20,7 +18,7 @@ class TransferDetailScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text(
+          title: const Text(
             'Details',
           ),
           actions: [
@@ -60,7 +58,7 @@ class TransferDetailScreen extends StatelessWidget {
         body: BlocBuilder<SessionBloc, SessionState>(
           builder: (context, state) {
             if (state.status.isLoading) {
-              return Center(
+              return const Center(
                 child: CircularProgressIndicator(),
               );
             } else if (state.status.isLoaded) {

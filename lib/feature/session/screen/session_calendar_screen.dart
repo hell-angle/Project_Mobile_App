@@ -8,7 +8,7 @@ import '../../theme/theme.dart';
 import '../session.dart';
 
 class SessionCalendarScreen extends StatefulWidget {
-  const SessionCalendarScreen({Key? key}) : super(key: key);
+  const SessionCalendarScreen({super.key});
 
   @override
   State<SessionCalendarScreen> createState() => _SessionCalendarScreenState();

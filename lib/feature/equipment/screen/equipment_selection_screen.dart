@@ -5,9 +5,9 @@ import '../../../database/database.dart';
 
 class EquipmentSelectionScreen extends StatelessWidget {
   const EquipmentSelectionScreen({
-    Key? key,
+    super.key,
     this.equipment,
-  }) : super(key: key);
+  });
 
   final Equipment? equipment;
 

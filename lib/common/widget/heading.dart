@@ -10,13 +10,13 @@ enum HeadingSize {
 
 class Heading extends StatelessWidget {
   const Heading({
-    Key? key,
+    super.key,
     required this.title,
     this.size = HeadingSize.large,
     this.side = false,
     this.actions = const [],
     this.sliver = true,
-  }) : super(key: key);
+  });
 
   final String title;
   final HeadingSize size;
@@ -70,7 +70,7 @@ class Heading extends StatelessWidget {
                             ),
                             child: IconButton(
                               padding: const EdgeInsets.all(2),
-                              constraints: BoxConstraints(),
+                              constraints: const BoxConstraints(),
                               onPressed: action.onPressed,
                               icon: action.icon,
                             ),
@@ -110,7 +110,7 @@ class Heading extends StatelessWidget {
                       ),
                       child: IconButton(
                         padding: const EdgeInsets.all(2),
-                        constraints: BoxConstraints(),
+                        constraints: const BoxConstraints(),
                         onPressed: action.onPressed,
                         icon: action.icon,
                       ),

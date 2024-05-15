@@ -6,7 +6,6 @@ import '../../../database/database.dart';
 import '../../exercise/exercise.dart';
 import '../../session/session.dart';
 import '../transfer.dart';
-import 'transfer_service.dart';
 
 class TransferService {
   TransferService({
@@ -68,7 +67,7 @@ class TransferService {
             routineId: -1,
             timeElapsed: TimedConverter().decode(int.parse(row.workoutDuration)),
           ),
-          exerciseGroups: [],
+          exerciseGroups: const [],
         ));
 
         sessionIndex = sessions.length - 1;
@@ -95,7 +94,7 @@ class TransferService {
               timer: temp.timer,
               barId: temp.barId,
               routineId: -1,
-              sets: [],
+              sets: const [],
             ));
 
         groupIndex = sessions[sessionIndex].exerciseGroups.length - 1;

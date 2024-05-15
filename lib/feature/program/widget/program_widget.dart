@@ -9,9 +9,9 @@ import '../program.dart';
 
 class ProgramWidget extends StatelessWidget {
   const ProgramWidget({
-    Key? key,
+    super.key,
     required this.program,
-  }) : super(key: key);
+  });
 
   final Program program;
 

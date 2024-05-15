@@ -10,9 +10,9 @@ import '../exercise.dart';
 
 class ExerciseDetailScreen extends StatefulWidget {
   const ExerciseDetailScreen({
-    Key? key,
+    super.key,
     required this.exercise,
-  }) : super(key: key);
+  });
 
   /// The [Exercise] to display
   final Exercise exercise;
@@ -107,7 +107,7 @@ class _ExerciseDetailScreenState extends State<ExerciseDetailScreen> {
                         ),
                       );
                     },
-                    icon: Icon(
+                    icon: const Icon(
                       Icons.more_vert_outlined,
                     ),
                   ),

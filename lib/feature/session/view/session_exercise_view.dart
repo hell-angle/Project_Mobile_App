@@ -8,9 +8,9 @@ import '../../theme/theme.dart';
 
 class SessionExerciseView extends StatelessWidget {
   const SessionExerciseView({
-    Key? key,
+    super.key,
     required this.exerciseGroups,
-  }) : super(key: key);
+  });
 
   final List<ExerciseGroupDto> exerciseGroups;
 

@@ -6,7 +6,7 @@ class HevyRow extends CSVRow {
   HevyRow(List<dynamic> row) : super(
     date: row[0],
     workoutName: row[1],
-    workoutDuration: Timed().toString(),
+    workoutDuration: const Timed().toString(),
     exerciseName: row[3],
     duration: Timed.fromSeconds(row[8]).toString(),
     reps: row[5],

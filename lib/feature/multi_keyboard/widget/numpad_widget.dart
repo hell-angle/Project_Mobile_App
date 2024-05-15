@@ -5,10 +5,10 @@ import '../../theme/theme.dart';
 
 class NumPadWidget extends StatefulWidget {
   const NumPadWidget({
-    Key? key,
+    super.key,
     required this.value,
     required this.onValueChanged,
-  }) : super(key: key);
+  });
 
   final double value;
   final Function(double) onValueChanged;

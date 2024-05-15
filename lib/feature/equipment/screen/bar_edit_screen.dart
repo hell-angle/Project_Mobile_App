@@ -9,9 +9,9 @@ import '../equipment.dart';
 
 class BarEditScreen extends StatefulWidget {
   const BarEditScreen({
-    Key? key,
+    super.key,
     required this.bar,
-  }) : super(key: key);
+  });
 
   final Bar bar;
 

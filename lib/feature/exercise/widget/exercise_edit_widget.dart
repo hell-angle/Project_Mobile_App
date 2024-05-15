@@ -9,11 +9,11 @@ import '../exercise.dart';
 
 class ExerciseEditWidget extends StatelessWidget {
   const ExerciseEditWidget({
-    Key? key,
+    super.key,
     required this.exercise,
     required this.onModify,
     this.typesEnabled = false,
-  }) : super(key: key);
+  });
 
   final Exercise exercise;
   final ValueChanged<Exercise> onModify;

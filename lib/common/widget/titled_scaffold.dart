@@ -5,10 +5,10 @@ import '../../feature/theme/theme.dart';
 
 
 class TitledScaffold extends StatelessWidget {
-  const TitledScaffold({Key? key,
+  const TitledScaffold({super.key,
     required this.title,
     required this.slivers,
-  }) : super(key: key);
+  });
 
   final String title;
   final List<Widget> slivers;

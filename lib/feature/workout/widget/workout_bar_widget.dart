@@ -10,14 +10,14 @@ import '../workout.dart';
 
 class WorkoutBarWidget extends StatelessWidget {
   const WorkoutBarWidget({
-    Key? key,
+    super.key,
     required this.workout,
     required this.exerciseTimerController,
     required this.nameNode,
     required this.reordering,
     required this.onReorder,
     required this.onAddExercises,
-  }) : super(key: key);
+  });
 
   final Workout workout;
   final ExerciseTimerController exerciseTimerController;
@@ -194,7 +194,7 @@ class WorkoutBarWidget extends StatelessWidget {
                   icon: const Icon(
                     Icons.check_rounded,
                   ),
-                  label: Text(
+                  label: const Text(
                     'Done',
                   ),
                 )

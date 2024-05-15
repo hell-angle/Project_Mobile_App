@@ -6,10 +6,10 @@ import '../settings.dart';
 
 class SettingsProvider extends StatefulWidget {
   const SettingsProvider({
-    Key? key,
+    super.key,
     required this.settings,
     required this.child,
-  }) : super(key: key);
+  });
 
   final Settings settings;
   final Widget child;

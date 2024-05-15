@@ -9,11 +9,11 @@ enum SliverBoxType {
 
 class SliverBoxWidget extends StatefulWidget {
   const SliverBoxWidget({
-    Key? key,
+    super.key,
     this.type = SliverBoxType.empty,
     this.side = false,
     this.text = '',
-  }) : super(key: key);
+  });
 
   final SliverBoxType type;
   final bool side;

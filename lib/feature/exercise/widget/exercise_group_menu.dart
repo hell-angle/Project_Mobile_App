@@ -9,12 +9,12 @@ import '../exercise.dart';
 
 class ExerciseGroupMenu extends StatelessWidget {
   const ExerciseGroupMenu({
-    Key? key,
+    super.key,
     required this.exercise,
     required this.exerciseGroup,
     required this.onExerciseGroupUpdate,
     required this.onExerciseGroupDelete,
-  }) : super(key: key);
+  });
 
   final Exercise exercise;
   final ExerciseGroupDto exerciseGroup;

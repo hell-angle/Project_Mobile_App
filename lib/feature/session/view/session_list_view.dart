@@ -6,10 +6,10 @@ import '../session.dart';
 
 class SessionListView extends StatelessWidget {
   const SessionListView({
-    Key? key,
+    super.key,
 
     required this.sessions,
-  }) : super(key: key);
+  });
 
   final List<Session> sessions;
 

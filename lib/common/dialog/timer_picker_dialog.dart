@@ -6,10 +6,10 @@ import '../common.dart';
 
 
 class TimedPickerDialog extends StatelessWidget {
-  TimedPickerDialog({Key? key,
+  TimedPickerDialog({super.key,
     required this.initialValue,
     this.onSubmit,
-  }) : super(key: key);
+  });
 
   Timed initialValue;
   final ValueChanged<Timed>? onSubmit;

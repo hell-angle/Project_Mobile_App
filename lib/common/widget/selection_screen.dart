@@ -12,7 +12,7 @@ import '../../feature/theme/theme.dart';
 class SearchableSelectionScreen<Type> extends StatefulWidget {
   /// Creates a selection screen.
   const SearchableSelectionScreen({
-    Key? key,
+    super.key,
     required this.title,
     required this.items,
     required this.itemBuilder,
@@ -21,7 +21,7 @@ class SearchableSelectionScreen<Type> extends StatefulWidget {
     this.selectedActionText = 'Delete',
     this.onSelected,
     this.floatingActionButton,
-  }) : super(key: key);
+  });
 
   /// The title to be displayed in the app bar.
   final String title;

@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:reorderables/reorderables.dart';
 
 class ReorderSliverList extends StatefulWidget {
-  const ReorderSliverList({Key? key,
+  const ReorderSliverList({super.key,
     required this.children,
     required this.itemBuilder,
     required this.onReorder,
-  }) : super(key: key);
+  });
 
   final List children;
   final IndexedWidgetBuilder itemBuilder;

@@ -7,9 +7,9 @@ import '../../theme/theme.dart';
 
 class ExerciseTimerWidget extends StatefulWidget {
   const ExerciseTimerWidget({
-    Key? key,
+    super.key,
     required this.controller,
-  }) : super(key: key);
+  });
 
   final ExerciseTimerController controller;
 
@@ -57,7 +57,7 @@ class _ExerciseTimerWidgetState extends State<ExerciseTimerWidget> {
                 Center(
                   child: Text(
                     secondsToTime(timeLeft),
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontSize: 17,
                       fontWeight: FontWeight.w600,
                     ),
@@ -79,7 +79,7 @@ class _ExerciseTimerWidgetState extends State<ExerciseTimerWidget> {
           showBottomSheetDialog(
             context: context,
             child: TimedPickerDialog(
-              initialValue: Timed.zero(),
+              initialValue: const Timed.zero(),
               onSubmit: (value) {
                 widget.controller.startTimer(value);
               },

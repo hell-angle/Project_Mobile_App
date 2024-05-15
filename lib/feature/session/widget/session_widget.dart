@@ -12,10 +12,10 @@ import '../session.dart';
 
 class SessionWidget extends StatelessWidget {
   const SessionWidget({
-    Key? key,
+    super.key,
     required this.session,
     this.dateEnabled = true,
-  }) : super(key: key);
+  });
 
   final Session session;
   final bool dateEnabled;

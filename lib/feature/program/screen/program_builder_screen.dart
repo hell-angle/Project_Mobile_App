@@ -11,7 +11,7 @@ import '../../template/template.dart';
 import '../program.dart';
 
 class ProgramBuilderScreen extends StatefulWidget {
-  const ProgramBuilderScreen({Key? key}) : super(key: key);
+  const ProgramBuilderScreen({super.key});
 
   @override
   State<ProgramBuilderScreen> createState() => _ProgramBuilderScreenState();

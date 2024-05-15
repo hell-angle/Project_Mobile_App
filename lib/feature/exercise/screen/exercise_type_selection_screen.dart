@@ -6,10 +6,10 @@ import '../../theme/theme.dart';
 
 class ExerciseTypeSelectionScreen extends StatefulWidget {
   const ExerciseTypeSelectionScreen({
-    Key? key,
+    super.key,
     required this.exercise,
     this.exerciseTypes,
-  }) : super(key: key);
+  });
 
   final Exercise exercise;
   final List<ExerciseFieldType>? exerciseTypes;
@@ -37,7 +37,7 @@ class _ExerciseTypeSelectionScreenState extends State<ExerciseTypeSelectionScree
       actions: [
         IconButton(
           onPressed: () {
-            if (exerciseTypes.length < 1 || exerciseTypes.length > 3) {
+            if (exerciseTypes.isEmpty || exerciseTypes.length > 3) {
               ScaffoldMessenger.of(context).showSnackBar(
                 const SnackBar(
                   content: Text(
@@ -61,7 +61,7 @@ class _ExerciseTypeSelectionScreenState extends State<ExerciseTypeSelectionScree
           },
           icon: Icon(
             Icons.check,
-            color: exerciseTypes.length < 1 || exerciseTypes.length > 3 ? T(context).color.outlineVariant : null,
+            color: exerciseTypes.isEmpty || exerciseTypes.length > 3 ? T(context).color.outlineVariant : null,
           ),
         ),
       ],

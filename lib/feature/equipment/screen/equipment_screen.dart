@@ -5,7 +5,7 @@ import '../../../database/database.dart';
 import '../equipment.dart';
 
 class EquipmentScreen extends StatelessWidget {
-  const EquipmentScreen({Key? key}) : super(key: key);
+  const EquipmentScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

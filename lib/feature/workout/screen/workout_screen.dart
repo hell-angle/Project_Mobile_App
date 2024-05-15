@@ -12,9 +12,9 @@ import '../workout.dart';
 
 class WorkoutScreen extends StatefulWidget {
   const WorkoutScreen({
-    Key? key,
+    super.key,
     required this.workout,
-  }) : super(key: key);
+  });
 
   final Workout workout;
 
@@ -123,7 +123,7 @@ class _WorkoutScreenState extends State<WorkoutScreen>
                             });
                           },
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 4,
                         ),
                         StreamBuilder(

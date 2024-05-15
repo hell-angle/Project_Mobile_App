@@ -8,7 +8,7 @@ import '../../theme/theme.dart';
 import '../equipment.dart';
 
 class BarScreen extends StatefulWidget {
-  const BarScreen({Key? key}) : super(key: key);
+  const BarScreen({super.key});
 
   @override
   State<BarScreen> createState() => _BarScreenState();

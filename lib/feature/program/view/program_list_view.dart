@@ -9,7 +9,7 @@ import '../../theme/theme.dart';
 import '../program.dart';
 
 class ProgramListView extends StatefulWidget {
-  const ProgramListView({Key? key}) : super(key: key);
+  const ProgramListView({super.key});
 
   @override
   State<ProgramListView> createState() => _ProgramListViewState();
@@ -26,7 +26,7 @@ class _ProgramListViewState extends State<ProgramListView> {
           List<Program> programs = state.programs;
 
           if(programs.isEmpty) {
-            return SliverBoxWidget();
+            return const SliverBoxWidget();
           }
 
           return SliverReorderableGrid(

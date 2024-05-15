@@ -127,7 +127,7 @@ class _ThemeEditScreenState extends State<ThemeEditScreen> {
             ),
           IconButton(
             onPressed: () {
-              AppThemeColor theme2 = AppThemeColor.dark().copyWith(
+              AppThemeColor theme2 = const AppThemeColor.dark().copyWith(
                       /*id: widget.theme!.option.color.id,
                 appThemeId: widget.theme!.option.color.appThemeId,*/
                       )

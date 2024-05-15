@@ -8,7 +8,7 @@ import '../../theme/theme.dart';
 import '../settings.dart';
 
 class SettingsScreen extends StatelessWidget {
-  const SettingsScreen({Key? key}) : super(key: key);
+  const SettingsScreen({super.key});
 
   Widget Panel(BuildContext context, Widget child) {
     return SliverToBoxAdapter(

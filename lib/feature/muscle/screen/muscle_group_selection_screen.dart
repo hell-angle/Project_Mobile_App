@@ -5,9 +5,9 @@ import '../../../database/database.dart';
 
 class MuscleGroupSelectionScreen extends StatelessWidget {
   const MuscleGroupSelectionScreen({
-    Key? key,
+    super.key,
     this.muscleGroup,
-  }) : super(key: key);
+  });
 
   final MuscleGroup? muscleGroup;
 

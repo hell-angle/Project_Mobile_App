@@ -9,9 +9,9 @@ import '../exercise.dart';
 
 
 class ExerciseHistoryView extends StatefulWidget {
-  const ExerciseHistoryView({Key? key,
+  const ExerciseHistoryView({super.key,
     required this.exercise,
-  }) : super(key: key);
+  });
 
   final Exercise exercise;
 

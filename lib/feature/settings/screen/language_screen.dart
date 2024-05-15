@@ -6,7 +6,7 @@ import '../../theme/theme.dart';
 import '../settings.dart';
 
 class LanguageScreen extends StatelessWidget {
-  const LanguageScreen({Key? key}) : super(key: key);
+  const LanguageScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -18,11 +18,11 @@ typedef RoutineEditCallback = void Function(Routine routine, ExerciseList exerci
 
 class RoutineEditScreen extends StatefulWidget {
   const RoutineEditScreen({
-    Key? key,
+    super.key,
     this.routine,
     this.exerciseList,
     required this.onSubmit,
-  }) : super(key: key);
+  });
 
   final Routine? routine;
   final ExerciseList? exerciseList;

@@ -7,7 +7,7 @@ import '../../../database/database.dart';
 import '../../theme/theme.dart';
 
 class ExerciseAddScreen extends StatefulWidget {
-  const ExerciseAddScreen({Key? key}) : super(key: key);
+  const ExerciseAddScreen({super.key});
 
   @override
   State<ExerciseAddScreen> createState() => _ExerciseAddScreenState();
@@ -37,7 +37,7 @@ class _ExerciseAddScreenState extends State<ExerciseAddScreen> {
                     exercise: exercise,
                   ));
             },
-            icon: Icon(
+            icon: const Icon(
               Icons.check,
             ),
           ),

@@ -8,11 +8,11 @@ import '../../theme/theme.dart';
 
 class SessionWeeklyGoalWidget extends StatefulWidget {
   const SessionWeeklyGoalWidget({
-    Key? key,
+    super.key,
     required this.goal,
     required this.onModified,
     required this.dates,
-  }) : super(key: key);
+  });
 
   final int goal;
   final Function(int value) onModified;

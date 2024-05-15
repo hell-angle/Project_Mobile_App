@@ -6,7 +6,7 @@ import '../../settings/settings.dart';
 import '../theme.dart';
 
 class ThemeScreen extends StatefulWidget {
-  const ThemeScreen({Key? key}) : super(key: key);
+  const ThemeScreen({super.key});
 
   @override
   State<ThemeScreen> createState() => _ThemeScreenState();
@@ -193,7 +193,7 @@ class _ThemeScreenState extends State<ThemeScreen> {
                     }
                   },
                 )
-              : SliverBoxWidget(
+              : const SliverBoxWidget(
                   side: true,
                   text: 'Disabled. System theme is used.',
                 ),

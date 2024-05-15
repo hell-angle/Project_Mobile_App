@@ -7,7 +7,7 @@ import 'padding_screen.dart';
 import 'text_style_screen.dart';
 
 class DeveloperScreen extends StatelessWidget {
-  const DeveloperScreen({Key? key}) : super(key: key);
+  const DeveloperScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

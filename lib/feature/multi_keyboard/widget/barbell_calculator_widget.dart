@@ -8,11 +8,11 @@ import '../../theme/theme.dart';
 
 class BarbellCalculatorWidget extends StatefulWidget {
   const BarbellCalculatorWidget({
-    Key? key,
+    super.key,
     this.barId,
     required this.target,
     required this.onWeightChanged,
-  }) : super(key: key);
+  });
 
   final int? barId;
   final String target;

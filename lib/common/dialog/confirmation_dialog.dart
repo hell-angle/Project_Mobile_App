@@ -7,7 +7,7 @@ import '../../feature/theme/theme.dart';
 /// To be used with [showBottomSheetDialog].
 class ConfirmationDialog extends StatelessWidget {
   /// Creates a confirmation dialog.
-  const ConfirmationDialog({Key? key,
+  const ConfirmationDialog({super.key,
     required this.title,
     required this.subtitle,
     this.confirmText = 'Submit',
@@ -15,7 +15,7 @@ class ConfirmationDialog extends StatelessWidget {
     this.confirmButtonStyle,
     this.cancelButtonStyle,
     required this.onSubmit,
-  }) : super(key: key);
+  });
 
   /// The bold text displayed at the top of the dialog.
   final String title;

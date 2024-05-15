@@ -7,7 +7,9 @@ import '../database.dart';
 
 @Entity(
   tableName: 'exercise',
-  primaryKeys: ['id'],
+  primaryKeys: [
+    'id',
+  ],
   foreignKeys: [
     ForeignKey(
       childColumns: ['bar_id'],
@@ -24,7 +26,6 @@ class Exercise extends Equatable {
     required this.muscleGroup,
     required this.equipment,
     required this.videoPath,
-    this.imageUrl, // Add this field
     required this.timer,
     this.barId,
     this.weightUnit,
@@ -42,7 +43,6 @@ class Exercise extends Equatable {
         muscleGroup = MuscleGroup.none,
         equipment = Equipment.none,
         videoPath = 'Empty',
-        imageUrl = null, // Add this field
         timer = const Timed.zero(),
         barId = null,
         weightUnit = null,
@@ -71,9 +71,6 @@ class Exercise extends Equatable {
   @ColumnInfo(name: 'video_path')
   final String videoPath;
 
-  @ColumnInfo(name: 'image_url') // Add this field
-  final String? imageUrl;
-
   @ColumnInfo(name: 'timer')
   final Timed timer;
 
@@ -98,6 +95,7 @@ class Exercise extends Equatable {
   @ignore
   final List<ExerciseConversion> conversions;
 
+
   Exercise copyWith({
     int? id,
     String? name,
@@ -105,7 +103,6 @@ class Exercise extends Equatable {
     MuscleGroup? muscleGroup,
     Equipment? equipment,
     String? videoPath,
-    String? imageUrl, // Add this field
     Timed? timer,
     int? barId,
     WeightUnit? weightUnit,
@@ -122,9 +119,8 @@ class Exercise extends Equatable {
       muscleGroup: muscleGroup ?? this.muscleGroup,
       equipment: equipment ?? this.equipment,
       videoPath: videoPath ?? this.videoPath,
-      imageUrl: imageUrl ?? this.imageUrl, // Add this field
-      timer: timer ?? this.timer,
       barId: barId ?? this.barId,
+      timer: timer ?? this.timer,
       weightUnit: weightUnit ?? this.weightUnit,
       distanceUnit: distanceUnit ?? this.distanceUnit,
       isCustom: isCustom ?? this.isCustom,
@@ -142,7 +138,6 @@ class Exercise extends Equatable {
         muscleGroup,
         equipment,
         videoPath,
-        imageUrl, // Add this field
         timer,
         barId,
         weightUnit,

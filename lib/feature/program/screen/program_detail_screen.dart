@@ -7,9 +7,9 @@ import '../program.dart';
 
 class ProgramDetailScreen extends StatefulWidget {
   const ProgramDetailScreen({
-    Key? key,
+    super.key,
     required this.programId,
-  }) : super(key: key);
+  });
 
   final int programId;
 

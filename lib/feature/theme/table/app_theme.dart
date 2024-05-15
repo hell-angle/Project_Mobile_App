@@ -28,7 +28,7 @@ class AppTheme extends Equatable {
     name: 'System',
     brightness: colorScheme.brightness,
     option: AppThemeOption(
-      color: AppThemeColor.dark().copyWith(
+      color: const AppThemeColor.dark().copyWith(
         background: colorScheme.background,
         inversePrimary: colorScheme.inversePrimary,
         inverseSurface: colorScheme.inverseSurface,
@@ -176,7 +176,7 @@ class AppTheme extends Equatable {
       outlinedButtonTheme: OutlinedButtonThemeData(
         style: ButtonStyle(
           minimumSize: MaterialStateProperty.all(
-            Size(46, 44),
+            const Size(46, 44),
           ),
           foregroundColor: MaterialStateProperty.all(
             option.color.onBackground,

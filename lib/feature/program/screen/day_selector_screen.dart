@@ -7,9 +7,9 @@ import '../../theme/theme.dart';
 
 class DaySelectorScreen extends StatefulWidget {
   const DaySelectorScreen({
-    Key? key,
+    super.key,
     required this.day,
-  }) : super(key: key);
+  });
 
   final Day day;
 

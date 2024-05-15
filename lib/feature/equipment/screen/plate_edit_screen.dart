@@ -12,9 +12,9 @@ import '../equipment.dart';
 
 class PlateEditScreen extends StatefulWidget {
   const PlateEditScreen({
-    Key? key,
+    super.key,
     required this.plate,
-  }) : super(key: key);
+  });
 
   final Plate plate;
 

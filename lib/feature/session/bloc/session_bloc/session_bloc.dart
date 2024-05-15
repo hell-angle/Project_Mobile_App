@@ -1,13 +1,10 @@
 import 'dart:async';
-import 'dart:io';
 
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
-import 'package:file_picker/file_picker.dart';
 
 import '../../../../common/common.dart';
 import '../../../../database/database.dart';
-import '../../../exercise/exercise.dart';
 import '../../../routine/routine.dart';
 import '../../../transfer/transfer.dart';
 import '../../../workout/workout.dart';

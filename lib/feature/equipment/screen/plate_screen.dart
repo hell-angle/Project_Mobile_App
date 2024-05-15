@@ -7,7 +7,7 @@ import '../../theme/theme.dart';
 import '../equipment.dart';
 
 class PlateScreen extends StatefulWidget {
-  const PlateScreen({Key? key}) : super(key: key);
+  const PlateScreen({super.key});
 
   @override
   State<PlateScreen> createState() => _PlateScreenState();

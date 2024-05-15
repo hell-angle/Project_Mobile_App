@@ -7,14 +7,14 @@ import '../exercise.dart';
 
 class ExerciseSetWidget extends StatefulWidget {
   const ExerciseSetWidget({
-    Key? key,
+    super.key,
     required this.index,
     required this.exercise,
     required this.group,
     required this.set,
     this.onExerciseSetToggled,
     required this.checkboxEnabled,
-  }) : super(key: key);
+  });
 
   final int index;
   final Exercise exercise;

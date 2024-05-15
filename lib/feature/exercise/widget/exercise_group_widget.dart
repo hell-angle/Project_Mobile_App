@@ -90,7 +90,7 @@ class _ExerciseGroupWidgetState extends State<ExerciseGroupWidget> {
           Row(
             children: [
               Expanded(
-                child: Container(
+                child: SizedBox(
                   height: 40,
                   child: TextButton(
                     onPressed: () {},
@@ -316,13 +316,11 @@ class _ExerciseGroupWidgetState extends State<ExerciseGroupWidget> {
                           exercise: widget.exercise,
                           set: widget.exerciseSets[index],
                           onExerciseSetToggled: (value) {
-                            if (widget.onExerciseSetToggled != null) {
-                              widget.onExerciseSetToggled!(value, index);
-                              if (value.checked == true && widget.controller != null) {
-                                widget.controller!.startTimer(widget.exerciseGroup.timer);
-                              }
+                            widget.onExerciseSetToggled(value, index);
+                            if (value.checked == true && widget.controller != null) {
+                              widget.controller!.startTimer(widget.exerciseGroup.timer);
                             }
-                          },
+                                                    },
                           checkboxEnabled: widget.checkboxEnabled,
                         ));
                 },

@@ -7,9 +7,9 @@ import '../session.dart';
 
 class SessionDetailScreen extends StatefulWidget {
   const SessionDetailScreen({
-    Key? key,
+    super.key,
     required this.session,
-  }) : super(key: key);
+  });
 
   final Session session;
 

@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../../feature/theme/theme.dart';
 
 class TextStyleScreen extends StatelessWidget {
-  const TextStyleScreen({Key? key}) : super(key: key);
+  const TextStyleScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

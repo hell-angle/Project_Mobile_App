@@ -6,7 +6,7 @@ import '../../feature/theme/theme.dart';
 
 
 class LoadingSkeleton extends StatelessWidget {
-  const LoadingSkeleton({
+  const LoadingSkeleton({super.key, 
     required this.child,
     required this.offset,
   });

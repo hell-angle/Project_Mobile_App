@@ -16,10 +16,10 @@ showSessionOptionsView(BuildContext context, Session session) {
           onTap: () {
             print(session.routine.toJson());
           },
-          leading: Icon(
+          leading: const Icon(
             Icons.library_add_outlined,
           ),
-          title: Text(
+          title: const Text(
             'Nice',
           ),
         ),
@@ -57,10 +57,10 @@ showSessionOptionsView(BuildContext context, Session session) {
         ),
         ListTile(
           onTap: () {},
-          leading: Icon(
+          leading: const Icon(
             Icons.library_add_outlined,
           ),
-          title: Text(
+          title: const Text(
             'Create Template',
           ),
         ),
