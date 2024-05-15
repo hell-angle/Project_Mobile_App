@@ -16,7 +16,7 @@ Student:
 2. Clone this repository.
 
 ```
-git clone https://github.com/deluxepter/maven
+[https://github.com/hell-angle/Project_Mobile_App]
 ```
 
 3. Get packages.
